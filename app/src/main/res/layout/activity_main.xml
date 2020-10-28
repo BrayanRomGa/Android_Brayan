@@ -5,6 +5,8 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     >
+    <!--    subir el diseño a github-->
+
     <!--    //divicion de principal(toda la area)-->
     <LinearLayout
         android:layout_width="match_parent"
