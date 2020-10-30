@@ -1,3 +1,19 @@
 <resources>
     <string name="app_name">Aplicaciones Moviles</string>
+    <string name="creador">Brayan Romero</string>
+    <string name="EXP">EXP</string>
+    <string name="clear">Limpiar</string>
+    <string name="div">%</string>
+    <string name="igual">=</string>
+    <string name="tmp4">tmp</string>
+    <string name="tmp5">tmp</string>
+    <string name="tmp6">tmp</string>
+    <string name="tmp7">tmp</string>
+    <string name="tmp8">tmp</string>
+    <string name="tmp99">tmp</string>
+    <string name="tmp0">tmp</string>
+
+
+
+
 </resources>

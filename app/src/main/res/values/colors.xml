@@ -8,10 +8,10 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="colorAccent">#03DAC5</color>
-    <color name="mirojo">#FF0000</color>
-    <color name="blanco">#FFFFFF</color>
+    <color name="red">#FF0000</color>
     <color name="negro">#000000</color>
-    <color name="naranja">#FF9824</color>
+    <color name="orange">#FF9824</color>
     <color name="gris">#555555</color>
-    <color name="blanco_grisaceo">#AAAAAA</color>
+    <color name="gray">#AAAAAA</color>
+    <color name="gray_2">#2B2A2A</color>
 </resources>

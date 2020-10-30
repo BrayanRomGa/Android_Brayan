@@ -9,7 +9,7 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
     TextView resultadofinal;
     Button btncero, btnuno, btndos, btntres, btncuatro, btncinco, btnseis, btnsiete, btnocho,
-            btnnueve, btnigual, btnsuma, btnresta, btnmulti, btnporcentaje, btndiv, btnlimpiar;
+            btnnueve, btnigual, btnsuma, btnresta, btnmulti, btnporcentaje, btndiv, btnClear;
     double resultado;
     String operacion, sumatoria,temp;
 
@@ -32,11 +32,11 @@ public class MainActivity extends AppCompatActivity {
         btnresta = findViewById(R.id.menos);
         btnmulti = findViewById(R.id.mult);
         btndiv = findViewById(R.id.dividir);
-        btnporcentaje = findViewById(R.id.porcentaje);
+        btnporcentaje = findViewById(R.id.percentage);
         btnigual = findViewById(R.id.resultado);
         resultadofinal = findViewById(R.id.resultadofinal);
 
-        btnlimpiar = findViewById(R.id.btnlimpiar);
+        btnClear = findViewById(R.id.btnClear);
         resultadofinal = findViewById(R.id.resultadofinal);
     }
         public void EqualButton(View view){
@@ -147,17 +147,12 @@ public class MainActivity extends AppCompatActivity {
                 temp=resultadofinal.getText().toString();
                 resultadofinal.setText("");
                 break;
-            case R.id.porcentaje:
+            case R.id.percentage:
                 operacion="%";
                 temp=resultadofinal.getText().toString();
                 resultadofinal.setText("");
                 break;
-            case R.id.exponente:
-                operacion="**";
-                temp=resultadofinal.getText().toString();
-                resultadofinal.setText("");
-                break;
-            case R.id.btnlimpiar:
+            case R.id.btnClear:
                 temp="";
                 operacion="";
                 resultadofinal.setText("");

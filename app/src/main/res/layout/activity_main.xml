@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     >
-    <!--    subir el diseño a github-->
+
+<!--    subir el diseño a github-->
     <!--    creacion del diseño-->
     <!--    creacion del diseño-->
     <!--    creacion del diseño-->
@@ -18,10 +19,11 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:weightSum="10"
+        tools:ignore="NestedWeights"
         >
         <!--        //divicion del apartado de operaciones(el cuadro completo  de arriba xd)-->
         <LinearLayout
-            android:background="@color/gris"
+            android:background="@color/gray_2"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="7"
@@ -35,77 +37,77 @@
                 android:layout_height="match_parent"
                 >
                 <TextView
-                    android:layout_gravity="right|bottom"
+
+                    android:layout_gravity="bottom|right"
                     android:textSize="50dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="@color/naranja"
+                    android:textColor="@color/orange"
                     android:text=""
                     android:onClick="PressButton"
                     android:id="@+id/resultadofinal"
                     >
                 </TextView>
+
             </FrameLayout>
 
         </LinearLayout>
         <!--        //divicion de la seccion de teclas-->
+
         <LinearLayout
+            android:backgroundTint="@color/gris"
+            android:weightSum="5"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="3"
             android:orientation="vertical"
             android:background="@color/white"
+            android:padding="10dp"
             >
             <!--            //divicion de las botones-->
             <LinearLayout
+                android:weightSum="4"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_weight="2"
+                android:layout_weight="1"
                 android:orientation="horizontal"
-                android:textColor="@color/naranja"
-
-                >
+                android:textColor="@color/orange">
 
                 <Button
+                    android:backgroundTint="@color/gray"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="2"
                     android:onClick="PressButton"
-                    android:id="@+id/btnlimpiar"
-                    android:textColor="@color/naranja"
-                    android:text="C"
+                    android:id="@+id/btnClear"
+                    android:textColor="@color/orange"
+                    android:text="@string/clear"
+                    android:textSize="30dp"
                     >
                 </Button>
 
                 <Button
+                    android:textSize="30dp"
+                    android:backgroundTint="@color/gray"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_weight="2"
-                    android:text="%"
+                    android:layout_weight="1"
+                    android:text="@string/div"
                     android:onClick="PressButton"
-                    android:textColor="@color/naranja"
-                    android:id="@+id/porcentaje"
+                    android:textColor="@color/orange"
+                    android:id="@+id/percentage"
                     >
                 </Button>
                 <Button
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="2"
-                    android:text="EXP"
-                    android:onClick="PressButton"
-                    android:textColor="@color/naranja"
-                    android:id="@+id/exponente"
-                    >
-                </Button>
-
-                <Button
+                    android:textSize="30dp"
                     android:id="@+id/dividir"
+                    android:backgroundTint="@color/gray"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_weight="2"
+                    android:layout_weight="1"
                     android:onClick="PressButton"
                     android:text="/"
-                    android:textColor="@color/naranja"
+                    android:textColor="@color/orange"
                     >
                 </Button>
             </LinearLayout>
@@ -114,10 +116,12 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_weight="2"
+                android:layout_weight="1"
                 android:orientation="horizontal"
                 >
                 <Button
+                    android:textSize="30dp"
+                    android:backgroundTint="@color/gray"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="2"
@@ -127,6 +131,8 @@
                     >
                 </Button>
                 <Button
+                    android:textSize="30dp"
+                    android:backgroundTint="@color/gray"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="2"
@@ -136,6 +142,8 @@
                     >
                 </Button>
                 <Button
+                    android:textSize="30dp"
+                    android:backgroundTint="@color/gray"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="2"
@@ -146,13 +154,15 @@
                 </Button>
 
                 <Button
+                    android:textSize="30dp"
+                    android:backgroundTint="@color/gray"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="2"
                     android:onClick="PressButton"
                     android:id="@+id/mult"
                     android:text="X"
-                    android:textColor="@color/naranja"
+                    android:textColor="@color/orange"
                     >
                 </Button>
             </LinearLayout>
@@ -160,12 +170,15 @@
 
 
             <LinearLayout
+                android:weightSum="8"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_weight="2"
+                android:layout_weight="1"
                 android:orientation="horizontal"
                 >
                 <Button
+                    android:textSize="30dp"
+                    android:backgroundTint="@color/gray"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="2"
@@ -175,6 +188,8 @@
                     >
                 </Button>
                 <Button
+                    android:textSize="30dp"
+                    android:backgroundTint="@color/gray"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="2"
@@ -184,6 +199,8 @@
                     >
                 </Button>
                 <Button
+                    android:textSize="30dp"
+                    android:backgroundTint="@color/gray"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="2"
@@ -193,12 +210,14 @@
                     >
                 </Button>
                 <Button
+                    android:textSize="30dp"
+                    android:backgroundTint="@color/gray"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="2"
                     android:text="-"
                     android:onClick="PressButton"
-                    android:textColor="@color/naranja"
+                    android:textColor="@color/orange"
                     android:id="@+id/menos"
                     >
                 </Button>
@@ -206,12 +225,15 @@
 
 
             <LinearLayout
+                android:weightSum="8"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_weight="2"
+                android:layout_weight="1"
                 android:orientation="horizontal"
                 >
                 <Button
+                    android:textSize="30dp"
+                    android:backgroundTint="@color/gray"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="2"
@@ -221,6 +243,8 @@
                     >
                 </Button>
                 <Button
+                    android:textSize="30dp"
+                    android:backgroundTint="@color/gray"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="2"
@@ -230,6 +254,8 @@
                     >
                 </Button>
                 <Button
+                    android:textSize="30dp"
+                    android:backgroundTint="@color/gray"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="2"
@@ -239,10 +265,12 @@
                     >
                 </Button>
                 <Button
+                    android:textSize="30dp"
+                    android:backgroundTint="@color/gray"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="2"
-                    android:textColor="@color/naranja"
+                    android:textColor="@color/orange"
                     android:text="+"
                     android:onClick="PressButton"
                     android:id="@+id/mas"
@@ -253,20 +281,26 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
+                android:weightSum="4"
                 android:layout_height="0dp"
-                android:layout_weight="2"
+                android:layout_weight="1"
                 android:orientation="horizontal"
                 >
                 <Button
+                    android:textSize="30dp"
+                    android:backgroundTint="@color/gray"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_weight="2"
+                    android:layout_weight="1"
                     android:text="0"
                     android:onClick="PressButton"
                     android:id="@+id/cero"
+
                     >
                 </Button>
                 <Button
+                    android:textSize="30dp"
+                    android:backgroundTint="@color/gray"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -276,13 +310,14 @@
                     >
                 </Button>
                 <Button
+                    android:textSize="30dp"
+                    android:backgroundTint="@color/gray"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:text="="
+                    android:layout_weight="2"
+                    android:text="@string/igual"
                     android:onClick="EqualButton"
-                    android:background="@color/naranja"
-                    android:textColor="@color/blanco"
+                    android:textColor="@color/orange"
                     android:id="@+id/resultado"
                     >
                 </Button>
@@ -290,4 +325,4 @@
 
         </LinearLayout>
     </LinearLayout>
-</FrameLayout>
+</RelativeLayout>
